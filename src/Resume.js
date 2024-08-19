@@ -1,7 +1,5 @@
 import React from 'react';
 import './styles/resume.css';
-import EducationSection from './EducationSection';
-import ExperienceSection from './ExperienceSection';
 
 const Resume = () => {
     return (

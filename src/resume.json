@@ -1,0 +1,69 @@
+{
+    "banner": {
+      "title": "Spirit Ho",
+      "subtitle": "spirit_ho@trendmicro.com"
+    },
+    "personalInfo": {
+      "name": "Spirit Ho",
+      "email": "spirit_ho@trendmicro.com",
+      "phone": "",
+      "address": "",
+      "linkedin": "",
+      "github": "github.com/spirithoyc"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Information Management",
+        "school": "Yuan Ze University",
+        "year": "2005"
+      }
+    ],
+    "experience": [
+      {
+        "position": "Software Engineer",
+        "company": "Trend Micro",
+        "years": "2020-Present",
+        "description": "Worked on Mobile App development",
+        "skill": ["Javascript", "ReactNative", "Java", "Kotlin", "Firebase", "BigQuery", "Google Cloud Platform"]
+      },
+      {
+        "position": "Software Engineer",
+        "company": "Pegatron",
+        "years": "2016-2020",
+        "description": "Worked on full-stack development of Web server",
+        "skill": ["C#", "Javascript", "CSS", "IIS Server", "MSSQL", ".NetFramework", "PHP", "MySQL"]
+      },
+      {
+        "position": "Android Test Lab Leader",
+        "company": "Pegatron",
+        "years": "2017-2019",
+        "description": "Technical Account Manager, People Management",
+        "skill": ["Python", "Ubuntu", "Android", "QA Training"]
+      }
+    ],
+    "achievement": [
+    {
+        "title": "Took over as the R&D Lead for Trend Micro VPN app and successfully merged two region-specific versions into a unified release.",
+        "year": "2024",
+        "ref": "Wiki link"
+    },
+    {
+        "title": "Facilitated customer(Kbro) success by training them to use MobileSDK for backend communication, enabling them to publish their own apps.",
+        "year": "2023",
+        "ref": "Wiki link"
+      },
+      {
+        "title": "Launched Home Network Security (for NEC) on both PlayStore & AppStore",
+        "year": "2022",
+        "ref": "https://youtube.com/shorts/0j_i15100C8"
+      },
+      {
+        "title": "Led a team of 19 members in preparing for and participating in AI Contest in Fukuka, driving collaboration and innovation.",
+        "year": "2024"
+      }
+    ],
+    "footer": {
+      "text": "© 2024 Spirit Ho"
+    }
+  }
+  

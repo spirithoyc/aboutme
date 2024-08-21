@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-color: #fff;
+}
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.banner {
+    text-align: center;
+    background-color: #FF3333;
+    padding: 10px;
+    border-radius: 2px;
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+.banner p {
+    font-size: 1em;
+    color: #001166;
+}
+
+.personal-info, 
+.education, 
+.experience, 
+.achievement {
+    text-align: left;
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.personal-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.personal-info .info-item {
+    margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #A3A3A3;
+    width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    .app-container {
+        padding: 10px;
+    }
+
+    .banner, 
+    .footer,
+    .personal-info, 
+    .education, 
+    .experience, 
+    .achievement {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .personal-info h2 {
+        font-size: 1.5em;
+    }
+}

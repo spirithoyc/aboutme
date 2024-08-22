@@ -82,7 +82,7 @@ body {
     background-color: #cb4040;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     border-radius: 0 4px 0 0;
     flex: 2;
 }
@@ -119,63 +119,65 @@ body {
 
 @media screen and (max-width: 768px) {
     .app-container {
-        flex-direction: column; /* 让内容在移动设备上纵向堆叠 */
-        padding: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .section-profession,
-    .section-profile {
-        flex: unset;
-        width: 100%; /* 确保在小屏幕上每个 section 都占满整个宽度 */
-        margin-bottom: 20px; /* 在 section 之间增加间距 */
+        flex-direction: column;
+        padding: 0;
     }
 
     .section-profile {
-        border-radius: 0 8px 0 0; /* 保持顶部的圆角 */
-        margin-bottom: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        height: 45vh;
+    }
+
+    .section-profession {
+        width: 100%; 
+        margin-bottom: 20px; 
+        padding: 0; 
+        position: absolute;
+        top: 100vh;
     }
 
     .education, 
     .experience, 
     .achievement,
     .personal-info {
-        padding: 15px; /* 缩小 padding，以适应小屏幕 */
+        padding: 4px;
     }
 
-    .personal-info h2,
-    .education h2 {
-        font-size: 1.2em;
+    .avatar-container {
+        border-radius: 0;
+        height: 35vh;
+        padding: 5vh;
+    }
+    .avatar-container h2 {
+        margin: 25px 0 10px 0;
+    }
+    .section-profile {
+        height: 100vh;
+        min-height: 100vh;
+        background-color: #fff;
     }
 
     .experience h2, 
-    .achievement h2 {
+    .achievement h2,
+    .personal-info h2,
+    .education h2 {
         font-size: 1.3em;
+        margin: 8px;
     }
 
     .experience h3, 
     .achievement h3 {
         font-size: 1.1em;
-        margin-bottom: 8px;
-    }
-
-    .avatar-container {
-        padding: 15px;
-        border-radius: 0; /* 在移动设备上去掉圆角，保持简洁 */
-    }
-
-    .avatar-container h2 {
-        font-size: 22px;
-    }
-
-    .avatar-container p {
-        font-size: 14px;
     }
 
     .avatar {
-        width: 80px;  /* 适当缩小头像图片 */
-        height: 80px;
+        width: 20vh;
+        height: 20vh;
     }
 
     .avatar-image {
@@ -185,6 +187,16 @@ body {
 
     .personal-info .info-item .icon {
         height: 18px;
-        margin-right: 8px;
+        margin: 0 8px 4px 8px;
+    }
+
+    .personal-info .info-item,
+    .education .education-item {
+        padding: 4px;
+        padding-left: 12px;
+        margin-bottom: 0;
+    }
+    .education .education-item p {
+        margin: 4px;
     }
 }

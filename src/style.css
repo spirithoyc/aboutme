@@ -9,77 +9,182 @@ body {
 
 .app-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
     justify-content: center;
     min-height: 100vh;
-    padding: 10px;
+    padding: 30px;
+    padding-right: 130px;
+    padding-left: 130px;
+    background-color: #dedede8a;
 }
 
-.banner {
-    text-align: center;
-    background-color: #FF3333;
-    padding: 10px;
-    border-radius: 2px;
-    width: 65%;
-    margin-bottom: 10px;
+.section-profession {
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    flex:5;
+    min-height: 100%;
+}
+.section-profile {
+    background-color: #fff;
+    border-radius: 0 4px 4px 0;
+    flex:2;
+    min-height: 100%;
+    background-color: #ff3333ba;
 }
 
-.banner h1 {
-    font-size: 3em;
-    color: #FFFFFF;
-}
-
-.banner p {
-    font-size: 1em;
-    color: #001166;
-}
-
-.personal-info, 
 .education, 
 .experience, 
-.achievement {
+.achievement,
+.personal-info {
+    padding: 20px;
     text-align: left;
-    width: 65%;
-    margin-bottom: 20px;
 }
 
-.personal-info h2 {
-    font-size: 2em;
+
+.personal-info h2,
+.education h2 {
+    font-size: 1.2em;
     margin-bottom: 10px;
+}
+
+.experience h2, 
+.achievement h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;    
+}
+
+.experience h3, 
+.achievement h3 {
+    color:#000000c0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    background-color: #00000010;
+    padding: 2px;
 }
 
 .personal-info .info-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     margin-bottom: 5px;
 }
 
-.footer {
-    text-align: center;
-    margin-top: auto;
-    padding: 10px;
-    background-color: #A3A3A3;
-    width: 65%;
+.personal-info .info-item .icon {
+    height: 20px;
+    margin: 10px;
 }
+
+.avatar-container {
+    background-color: #cb4040;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 4px 0 0;
+    flex: 2;
+}
+
+.avatar {
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-image {
+    width: 100%;
+    height:fit-content;
+    object-fit: cover;
+}
+
+.avatar-container h2 {
+    margin: 10px 0 5px 0;
+    font-size: 24px;
+}
+
+.avatar-container p {
+    margin: 0;
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+
+/* 现有样式保持不变... */
 
 @media screen and (max-width: 768px) {
     .app-container {
+        flex-direction: column; /* 让内容在移动设备上纵向堆叠 */
         padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    .banner, 
-    .footer,
-    .personal-info, 
+    .section-profession,
+    .section-profile {
+        flex: unset;
+        width: 100%; /* 确保在小屏幕上每个 section 都占满整个宽度 */
+        margin-bottom: 20px; /* 在 section 之间增加间距 */
+    }
+
+    .section-profile {
+        border-radius: 0 8px 0 0; /* 保持顶部的圆角 */
+        margin-bottom: 10px;
+    }
+
     .education, 
     .experience, 
-    .achievement {
+    .achievement,
+    .personal-info {
+        padding: 15px; /* 缩小 padding，以适应小屏幕 */
+    }
+
+    .personal-info h2,
+    .education h2 {
+        font-size: 1.2em;
+    }
+
+    .experience h2, 
+    .achievement h2 {
+        font-size: 1.3em;
+    }
+
+    .experience h3, 
+    .achievement h3 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .avatar-container {
+        padding: 15px;
+        border-radius: 0; /* 在移动设备上去掉圆角，保持简洁 */
+    }
+
+    .avatar-container h2 {
+        font-size: 22px;
+    }
+
+    .avatar-container p {
+        font-size: 14px;
+    }
+
+    .avatar {
+        width: 80px;  /* 适当缩小头像图片 */
+        height: 80px;
+    }
+
+    .avatar-image {
         width: 100%;
+        height: auto;
     }
 
-    .banner h1 {
-        font-size: 2.5em;
-    }
-
-    .personal-info h2 {
-        font-size: 1.5em;
+    .personal-info .info-item .icon {
+        height: 18px;
+        margin-right: 8px;
     }
 }

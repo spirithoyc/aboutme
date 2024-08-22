@@ -6,8 +6,7 @@ function Experience({ data }) {
             <h2>Experience</h2>
             {data.map((item, index) => (
                 <div key={index} className="experience-item">
-                    <h3>{item.position} at {item.company}</h3>
-                    <h4>{item.years}</h4>
+                    <h3>{item.position} at {item.company} ({item.years})</h3>
                     <p>{item.description}</p>
                     <p><strong>Skills:</strong> {item.skill.join(', ')}</p>
                 </div>

@@ -1,6 +1,4 @@
 import React from 'react';
-import Banner from './components/Banner';
-import Footer from './components/Footer';
 import PersonalInfo from './components/PersonalInfo';
 import Education from './components/Education';
 import Experience from './components/Experience';

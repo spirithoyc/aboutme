@@ -21,8 +21,22 @@ function PersonalInfo({ data }) {
                 {data.location}
             </div>
             <div className="info-item">
-                <img src={noteIcon} alt="Github" className="icon" />
-                <a href="{data.github}" target="_blank">{data.github}</a>
+                <img src={noteIcon} alt="Community" className="icon" />
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                    {Array.isArray(data.community) ? (
+                        data.community.map((link, index) => (
+                            <div key={index} style={{minHeight: '22px'}}>
+                                <a href={link} target="_blank" rel="noopener noreferrer">
+                                    {link}
+                                </a>
+                            </div>
+                        ))
+                    ) : (
+                        <a href={data.community} target="_blank" rel="noopener noreferrer">
+                            {data.community}
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     );

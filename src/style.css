@@ -61,11 +61,19 @@ body {
 .achievement h3 {
     color:#000000c0;
     font-size: 1.2em;
-    margin-bottom: 10px;
-    background-color: #00000010;
-    padding: 2px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    padding: 4px;
+    border-radius: 1px;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
 }
-
+.achievement-item:nth-child(odd) {
+    background-color: #00000010;
+}
+.achievement-item p {
+    line-height: 1.2em;
+}
 .personal-info .info-item {
     display: flex;
     align-items: center;
@@ -112,6 +120,63 @@ body {
     margin: 0;
     font-size: 16px;
     color: #f0f0f0;
+}
+
+.reference-item {
+    position: relative; 
+}
+
+.image-container .reference-image {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 40%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+
+.image-container:hover .reference-image {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.hover-text {
+    cursor: pointer;
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.flex-row-centered {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.flex-row-centered h3 {
+    margin: 0;
+    display: inline;
+}
+
+.flex-row-centered p {
+    height: 14px;
+    display: inline;
+    white-space: nowrap;
+    margin: 0;
+    margin-left: 4px;
+    color: #00000090;
+    background-color: #ff333340;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.references {
+    margin-bottom: 20px;
+    line-height: 1.3em;
 }
 
 
@@ -173,6 +238,12 @@ body {
     .experience h3, 
     .achievement h3 {
         font-size: 1.1em;
+        letter-spacing: 0;
+    }
+
+    .experience p, 
+    .achievement p {
+        padding: 4px;
     }
 
     .avatar {
@@ -199,4 +270,10 @@ body {
     .education .education-item p {
         margin: 4px;
     }
+
+    .image-container:hover .reference-image {
+        visibility: hidden;
+        opacity: 1;
+    }
 }
+

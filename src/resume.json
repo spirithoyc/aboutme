@@ -10,7 +10,7 @@
       "email": "spirit_ho@trendmicro.com",
       "phone": "",
       "linkedin": "",
-      "github": "github.com/spirithoyc"
+      "community": ["https://github.com/spirithoyc", "https://leetcode.com/u/spirit_ho/"]
     },
     "education": [
       {
@@ -47,25 +47,57 @@
             "title": "Led the R&D for Trend Micro VPN app.",
             "year": "2024",
             "description": "Took over as the R&D Lead for Trend Micro VPN app and successfully merged two region-specific versions into a unified release. Besides schedule planning and task assignment, I am also in charge of the app development for the Android platform, and resolved several critical issues that directly affected our business.",
-            "ref": "Wiki link"
+            "ref": [
+              {
+                "text": "Wiki - Project Feature Reqest/Schedule", 
+                "url": "https://trendmicro.atlassian.net/wiki/spaces/TMPWP/pages/284594236/Global+6.0+JP+migrate+to+Global+on+Android+iOS"
+              }
+            ]
         },
         {
             "title": "Trained Kbro to use MobileSDK for backend communication, enabling them to publish their own apps.",
             "year": "2023",
             "description": "Facilitated customer (Kbro) success by training them to use MobileSDK for backend communication, enabling them to publish their own apps.",
-            "ref": "Wiki link"
+            "ref": [
+              {
+                "text": "Documentation MobileSDK", 
+                "url": "https://trendmicro.atlassian.net/wiki/spaces/DIAM/pages/209920268/Vender+-+Mobile"
+              }
+            ]
         },
         {
             "title": "Developed Home Network Security app for NEC, launched on both PlayStore & AppStore.",
             "year": "2022",
             "description": "Led the development of the Home Network Security app for NEC, utilizing React Native, and successfully launched it on both PlayStore and AppStore.",
-            "ref": "https://youtube.com/shorts/0j_i15100C8"
+            "ref": [
+              {
+                "text": "Home Network Security App Brief Demo",
+                "url": "https://youtube.com/shorts/0j_i15100C8"
+              }
+            ]
         },
         {
             "title": "Led a team of 19 members in an AI Contest, fostering collaboration and innovation.",
             "year": "2024",
             "description": "Led a team of 19 members in preparing for and participating in an AI Contest in Fukuoka, driving collaboration and innovation within a few days. Also contributed to reporting to coaches in the final presentation.",
-            "ref": ""
+            "ref": [
+              {
+                "text": "AiContest Wiki",
+                "url": "https://trendmicro.atlassian.net/wiki/spaces/~spirit_ho/pages/667910148/AI+Contest"
+              },
+              {
+                "text": "Product Concept Diagram",
+                "image": "img_dora"
+              },
+              {
+                "text": "System architecture (draft version)",
+                "image": "img_think"
+              },
+              {
+                "text": "System architecture (proposal version)",
+                "image": "img_ifami"
+              }
+            ]
         }
     ],
     "footer": {

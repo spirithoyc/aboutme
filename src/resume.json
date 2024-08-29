@@ -40,6 +40,13 @@
         "years": "2017-2019",
         "description": "Technical Account Manager and QA Lead at a 3rd Party Test Lab, partnered with Google in Shanghai",
         "skill": ["Python", "Ubuntu", "Android", "Lab Maintenance", "People Training and Recruiting"]
+      },
+      {
+        "position": "SEG QA Engineer",
+        "company": "Trend Micro (Control Manager)",
+        "years": "2014-2016",
+        "description": "Sustained engineering for Control Manager. Handled customer cases, database recovery, integration with other Trend products, verified solutions, and released hotfixes.",
+        "skill": ["Python", "MSSQL", "IIS Server", "Windows server with VMWare"]
       }
     ],
     "achievement": [
